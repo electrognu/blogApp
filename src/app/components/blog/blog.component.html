@@ -10,22 +10,18 @@
             <h2>Introduce una nueva noticia</h2>
             <p>{{alertText}}</p>
 
-            <div>
-                <label for="title">Título:</label>
-                <input id="title" type="text" placeholder="" [(ngModel)]="newBlogItem.title">
-            </div>
+            <label for="title">Título:</label>
+            <input id="title" type="text" placeholder="" [(ngModel)]="newBlogItem.title">
 
             <label for="date">Fecha:</label>
             <input id="date" type="date" placeholder="" [(ngModel)]="newBlogItem.date">
 
-            <div>
-                <label for="url">URL:</label>
-                <input id="url" type="url" placeholder="" [(ngModel)]="newBlogItem.imageUrl">
-            </div>
-            <div>
-                <label for="content">Contenido:</label>
-                <textarea id="content" cols="30" rows="10" placeholder="" [(ngModel)]="newBlogItem.content"></textarea>
-            </div>
+            <label for="url">URL:</label>
+            <input id="url" type="url" placeholder="" [(ngModel)]="newBlogItem.imageUrl">
+
+            <label for="content">Contenido:</label>
+            <textarea id="content" cols="30" rows="10" placeholder="" [(ngModel)]="newBlogItem.content"></textarea>
+
             <button (click)="testAndSave($event)">Guardar</button>
         </div>
 

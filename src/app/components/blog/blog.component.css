@@ -6,6 +6,7 @@
 
 .blogContainer {
     display: flex;
+    flex-direction: column;
     padding: 10px;
     background-color: aquamarine;
 }
@@ -21,10 +22,10 @@
 .blogWrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: top;
+    justify-content: left;
     background-color: rgb(164, 182, 212);
-    padding: 10px;
+    /* padding: 10px; */
 
 }
 
@@ -34,35 +35,76 @@
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    p {
+        text-align: center;
+        color: red;
+        height: 16px;
+        padding: 5px;
+    }
+
+    label {
+        margin-bottom: 2px;
+        /* Add this line to set the width */
+        /* background-color: blueviolet; */
+
+    }
+
+    input {
+        margin-bottom: 15px
+    }
+
+    textarea {
+        margin-bottom: 15px;
+    }
+
+
 }
+
 
 .newsList {
     /* flex-wrap: wrap; */
     /* justify-content: space-around; */
     background-color: rgb(164, 182, 212);
-    padding: 10px;
+    padding: 0px;
 }
 
+.newWrapper {
+    background-color: rgb(241, 236, 236);
+    margin: 10px;
+    border-radius: 7px;
+    max-width: 400px;
+    min-width: 270px;
+}
+
+
+
 ul {
+    padding: 0px 5px, 0px, 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     list-style: none;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     .blogContainer {
         display: flex;
         flex-direction: row;
     }
 
     .formWrapper {
-        flex: 1 1 25%;
+        flex: 1 1 20%;
         padding-right: 16px;
     }
 
     .blogWrapper {
-        flex: 1 1 75%;
+        flex: 1 1 80%;
     }
 
 
