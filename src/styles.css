@@ -1,1 +1,15 @@
+.obligatorio {
+    color: red;
+}
+
+
 /* You can add global styles to this file, and also import other style files */
+
+.noticia {
+    background-color: rgb(241, 236, 236);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 300px;
+
+}

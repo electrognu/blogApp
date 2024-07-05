@@ -1,1 +1,37 @@
-<p>blog works!</p>
+<div class="blogWrapper">
+    <div class="listaNoticias">
+        <ul [innerHTML]="loadBlogNews()">
+
+        </ul>
+    </div>
+    <div class="formulario">
+        <h2>Introduce una nueva noticia</h2>
+        <p>Todos los campos son obligatorios</p>
+
+        <div>
+            <label for="title">Título:</label>
+            <input id="title" type="text" placeholder="campo obligatorio" [(ngModel)]="newBlogItem.title" required>
+        </div>
+        <div>
+            <label for="date">Fecha:</label>
+            <input id="date" type="text" placeholder="CO" [(ngModel)]="newBlogItem.date">
+        </div>
+        <div>
+            <label for="url">URL:</label>
+            <input id="url" type="text" placeholder="CO" [(ngModel)]="newBlogItem.imageUrl">
+        </div>
+        <div>
+            <label for="content">Contenido:</label>
+            <textarea id="content" cols="30" rows="10" placeholder="CO" [(ngModel)]="newBlogItem.content"></textarea>
+        </div>
+        <button (click)="testAndSave($event)">Guardar</button>
+    </div>
+
+
+</div>
+
+<!-- repasar tipos de input fecha ** 
+    para que era el name? del input ?
+    mirar diferencia entre id y name en input
+    mirar diferencia entre textarea y input
+-->

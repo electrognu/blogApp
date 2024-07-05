@@ -1,0 +1,14 @@
+.listaNoticias {
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    background-color: rgb(170, 182, 202);
+    padding: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+/* los estilos de <li> no se cargan aquí, se cargan antes en el styles.css */
