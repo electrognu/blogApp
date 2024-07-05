@@ -1,15 +1,59 @@
-.obligatorio {
-    color: red;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.pageWrapper {
+    padding: 10px;
 }
 
 
+/* 
+.pageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(164, 182, 212);
+    max-width: 1200px;
+    margin: auto;
+} */
+
 /* You can add global styles to this file, and also import other style files */
 
-.noticia {
+.newWrapper {
     background-color: rgb(241, 236, 236);
-    padding: 10px;
     margin: 10px;
-    border-radius: 10px;
-    width: 300px;
+    border-radius: 7px;
+    max-width: 400px;
+    min-width: 270px;
+}
 
+.newHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 7px 7px 0 0;
+}
+
+.newContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+    align-items: top;
+    margin-bottom: 5px;
+
+}
+
+.newTitle {
+    font-size: 1.5em;
+    font-weight: bold;
 }

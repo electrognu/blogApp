@@ -1,14 +1,73 @@
-.listaNoticias {
+.blogTitle {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    margin: 10px;
+}
+
+.blogContainer {
+    display: flex;
+    padding: 10px;
+    background-color: aquamarine;
+}
+
+
+
+.formWrapper {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.blogWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(164, 182, 212);
+    padding: 10px;
+
+}
+
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.newsList {
     /* flex-wrap: wrap; */
     /* justify-content: space-around; */
-    background-color: rgb(170, 182, 202);
-    padding: 20px;
+    background-color: rgb(164, 182, 212);
+    padding: 10px;
 }
 
 ul {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     list-style: none;
+}
+
+@media (min-width: 800px) {
+    .blogContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .formWrapper {
+        flex: 1 1 25%;
+        padding-right: 16px;
+    }
+
+    .blogWrapper {
+        flex: 1 1 75%;
+    }
+
+
+
+
 }
 
 /* los estilos de <li> no se cargan aquí, se cargan antes en el styles.css */
