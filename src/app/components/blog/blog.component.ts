@@ -15,19 +15,14 @@ export class BlogComponent {
   blogItems: Blogitem[] = [];
   alertText: string = " ";
 
-  constructor() {
-    console.log('BlogComponent created');
-  }
 
   ngOnInit() {
     this.fillInitialData();
   }
 
   testAndSave($event: any) {
-    console.log('testAndSave', $event); // Sacar comenario
     if (this.newBlogItem.title === '' || this.newBlogItem.imageUrl === '' || this.newBlogItem.content === '' || this.newBlogItem.date === '') {
       this.alertText = 'Todos los campos son obligatorios';
-      console.log("faltan datos")
     } else {
       this.blogItems.push(this.newBlogItem);
       this.newBlogItem = { title: '', imageUrl: '', content: '', date: '' };
@@ -69,9 +64,5 @@ export class BlogComponent {
       date: '2024-07-05'
     });
   }
-
-
-
-
 
 }
